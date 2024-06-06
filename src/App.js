@@ -1,15 +1,23 @@
-
+import React  from 'react';
+import Mainpage from './pages/Mainpage';
 import './App.css';
-import Header from './Components/Header';
-import Home from './pages/Home/Home';
-import RowPost from './Components/Rowpost/Rowpost';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import Favorite from './pages/Favorite/Favourite';
+
 function App() {
+  
+  
+
   return (
     <div className="App">
-      <Header/>
-<Home/>
-<RowPost/>
-    
+          <Router>
+      <Routes>
+      
+      <Route  path="/"  element={<Mainpage />} />
+      <Route path="/favorites" element={<Favorite />} />
+      </Routes>
+    </Router>
+
     </div>
   );
 }

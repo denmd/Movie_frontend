@@ -1,6 +1,6 @@
 .header {
     width: Fixed (1,440px)px;
-    height: 30px;
+    height: 15px;
     padding: 32px 98px 32px 98px;
     gap: 0px;
     display: flex;
@@ -60,6 +60,10 @@
     border: none;
     width: 400px;
   }
+  .search-bar input:focus {
+    outline: none;
+  
+}
   
   .favourites-button {
     width: 153px;
@@ -74,6 +78,12 @@
     display: flex;
     align-items: center;
     
+  }
+  .clear-search-icon{
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    margin-right: 6px;
   }
   
   @media (max-width: 419px) {
@@ -90,6 +100,10 @@
     .search-bar input{
         width: 150px;
     }
+    .search-bar input:focus {
+      outline: none;
+    
+  }
     .icon-title h3{
         font-size: 10px;
 
